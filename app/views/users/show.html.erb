@@ -3,7 +3,7 @@
   <%= image_tag @user.get_profile_image(100,100) %>
 </div>
 
-<%= @postimages.each do |postimage| %>
+<% @postimages.each do |postimage| %>
 <div>
   <%= link_to postimage_path(postimage.id) do %>
     <%= image_tag postimage.get_image %>
